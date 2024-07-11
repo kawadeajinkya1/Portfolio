@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/Portfolio/static/css/main.b8c44f15.css",
+    "main.js": "/Portfolio/static/js/main.6342057b.js",
+    "static/js/787.7da95b79.chunk.js": "/Portfolio/static/js/787.7da95b79.chunk.js",
+    "static/media/balaji.png": "/Portfolio/static/media/balaji.1aeedd5eaf17be517ace.png",
+    "static/media/ste.png": "/Portfolio/static/media/ste.093415836ef609af8d6f.png",
+    "static/media/ambio.png": "/Portfolio/static/media/ambio.6499daf3f4fb6cc04779.png",
+    "static/media/kprs.png": "/Portfolio/static/media/kprs.e6f0d0d7ddff234ec77b.png",
+    "static/media/bharat.png": "/Portfolio/static/media/bharat.dfa5e932debede64f3a8.png",
+    "static/media/primezone.png": "/Portfolio/static/media/primezone.9f5cb13ea30271ffcf16.png",
+    "static/media/cortica.png": "/Portfolio/static/media/cortica.2abb4b8d38d9dd1e0e81.png",
+    "static/media/a1.png": "/Portfolio/static/media/a1.d53cdcfc62dece293f30.png",
+    "static/media/science.png": "/Portfolio/static/media/science.4ff31392440d47d69d5d.png",
+    "static/media/php.png": "/Portfolio/static/media/php.4990580e9b615aeebb1f.png",
+    "static/media/wordpress.png": "/Portfolio/static/media/wordpress.11ed091523e3152b651f.png",
+    "static/media/gcc.png": "/Portfolio/static/media/gcc.0a1024adfd4c990bf4e3.png",
+    "static/media/mscit.png": "/Portfolio/static/media/mscit.e55d23d03fa2c05b09fa.png",
+    "static/media/js.png": "/Portfolio/static/media/js.3dfb665e058d08c99f28.png",
+    "static/media/mysql.png": "/Portfolio/static/media/mysql.5f2a4aabcb968e5877af.png",
+    "static/media/in.png": "/Portfolio/static/media/in.667d4cc4fb13f04017ed.png",
+    "index.html": "/Portfolio/index.html",
+    "main.b8c44f15.css.map": "/Portfolio/static/css/main.b8c44f15.css.map",
+    "main.6342057b.js.map": "/Portfolio/static/js/main.6342057b.js.map",
+    "787.7da95b79.chunk.js.map": "/Portfolio/static/js/787.7da95b79.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b8c44f15.css",
+    "static/js/main.6342057b.js"
+  ]
+}
