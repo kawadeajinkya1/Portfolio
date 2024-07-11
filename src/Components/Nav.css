@@ -1,0 +1,188 @@
+.navbar{
+    position:fixed;
+    width:99vw;
+    height:4rem;
+    background:rgb(28, 24, 24);
+    box-shadow: 0.2px 0.2px 2px 0.1px gray;
+    display:flex;
+    justify-content: space-around;
+    overflow-y: visible;
+    z-index: 999;
+
+    }
+    
+    .left{
+        display: flex;
+        justify-content: center;
+        position:relative;
+        width:100%;
+        color: #ffffc4;
+    }
+
+
+
+    .hammer{
+   
+        position:relative;
+        display: flex;
+       
+        background: none;
+        left:-1rem;
+        top:1rem;
+        border: none;
+        color: black;
+    }
+
+    
+    .burgerdata{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        top:0.5rem;
+        z-index: 2;
+        right: 0rem;
+        border-radius: 1.8rem;
+        width: 20%;
+        height: auto;
+        background-color:rgb(255, 255, 255);
+        transition:  .4s all ease-in-out; 
+        overflow: hidden;
+        box-shadow: 0.2px 0.2px 2px 0.1px gray;
+       
+    }
+
+    .burgerdata2{
+        position: absolute;
+        display: block;
+        flex-direction: column;
+        top: 2.5rem;
+        right: 0;
+        transition:.4s all ease-out;
+        width: 0%;
+        height: 90%;
+        background-color:rgb(255, 255, 255);
+        overflow: hidden;
+    
+    }
+
+    .burgerdata .burgerItem{
+    list-style: none;
+    padding: 1rem;
+    border-bottom: 1px solid white;
+    color: black;
+    text-decoration: none;
+}
+.burgerdata2 .burgerItem{
+    list-style: none;
+    padding: 1rem;
+    border-bottom: 1px solid white;
+    color: black;
+    text-decoration: none;
+}
+.burgerLink{
+    text-decoration: none;
+    color: black;
+}
+
+.profie{
+    width:100%;
+    height:5rem;
+    background-color: transparent;
+    display: flex;
+
+}
+
+
+
+.icon_bar{
+font-size: 1rem;
+color: #ffffcc;
+}
+
+
+.xbtn{
+background: transparent;
+border:none;
+color:#ffffcc ;
+}
+
+
+@media screen and (max-width:768px)
+{
+    
+   
+    .icon-bars {
+        font-size:2rem;
+        color: white;
+        background-color:white;
+    }
+    .burgerdata{
+        z-index: 999;
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        top:0.5rem;
+        z-index: 2;
+        right:0;
+        border-radius: 1.8rem;
+        width: 75%;
+        height: auto;
+        background-color:rgb(28, 24, 24);
+        transition:  .4s all ease-in-out; 
+   overflow: visible;
+        color:#00ffcc;
+       
+    }
+
+    .burgerdata2{
+        position: fixed;
+        z-index: 999;
+        display: flex;
+        flex-direction: column;
+        top: 2.5rem;
+        right: 0;
+        transition:.1s all ease-out;
+        width: 0%;
+        height: auto;
+        overflow: visible;
+        background-color:rgb(28, 24, 24);
+        text-align: center;
+       
+    
+    }
+
+    .burgerdata .burgerItem{
+    list-style: none;
+    padding: 1rem 3rem;
+    border-bottom: 1px solid white;
+    color: #ffffcc;
+    text-align: center;
+}
+.burgerdata2 .burgerItem{
+    list-style: none;
+    padding: 1rem 3rem;
+    border-bottom: 1px solid white;
+    color: #ffffcc;
+    text-align: center;
+}
+.burgerLink{
+    text-decoration: none;
+    background-color: transparent;
+    color: #ffffcc;
+    text-align: center;
+}
+
+
+
+
+.burgerdata .burgerItems{
+    list-style: none;
+    padding: 1rem 0rem;
+    border-bottom: 1px solid white;
+    color: white;
+
+    list-style: none;
+}
+
+
+}

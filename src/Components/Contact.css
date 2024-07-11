@@ -1,0 +1,32 @@
+.cnt{
+    padding: 2rem;
+    display: flex;
+    justify-content:space-around ;
+    align-items: center;
+    box-sizing: border-box; 
+}
+
+
+
+
+input[type=text] {
+    width: 100%;
+    padding:5PX;
+    margin: 2px 0;
+    box-sizing: border-box;
+  }
+
+  input[type=email] {
+    width: 100%;
+    padding: 5PX;
+    margin: 2px 0;
+    box-sizing: border-box;
+  }
+
+ textarea {
+    width: 100%;
+    padding:5PX;
+    margin: 2px 0;
+    box-sizing: border-box;
+    
+  }

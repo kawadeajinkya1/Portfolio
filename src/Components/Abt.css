@@ -1,0 +1,130 @@
+.i2{
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;  
+    display:flex;
+    justify-content: center;
+    text-align: center;
+box-sizing: border-box; 
+
+}
+
+.abt,.exp{
+    width:100%;
+    padding:2rem;
+
+}
+
+.abt{
+    line-height: 1.3rem;
+    font-family:"ubuntu" ;
+    text-align: justify;
+   
+ 
+color: #ffffcc;
+}
+
+.exp{
+    position: relative;
+    
+    line-height: 1.3rem;
+    font-family:"ubuntu";
+    text-align: justify;
+
+
+color: #ffffcc;}
+
+.head{
+    font-size: 1.2rem;
+    color: #ffffcc;
+}
+
+
+
+ul {
+    z-index:2;
+    position:absolute;
+    list-style: disc;
+    padding: 0;
+  }
+
+  /* Style the list items */
+  li {
+
+    margin-bottom: 20px;
+    line-height: 1rem;
+    font-family:"ubuntu" ;
+    text-align: justify;
+    font-size: 0.8rem;
+color: #ffffcc;
+
+margin-left: -0.099rem;
+    padding-right:2rem;
+  }
+
+
+
+  
+
+@media screen and (max-width:768px) {
+    
+    .i2{
+    position: relative;
+        width: 100%;
+      
+        display:flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    padding:2rem;
+    box-sizing: border-box; 
+    
+    }
+
+    .exp{
+        position: relative;
+        top:-2rem;
+        height: 24rem; 
+        line-height: 1.3rem;
+        font-family:"ubuntu";
+        text-align: justify;
+        padding:2rem;
+        padding-right:0;
+        /*
+    color: #add8e6;     light blue
+    color: #ffffcc;     pale yellow
+    color: #fa8072;     SALMON
+    color: #40e0d0;     TURQUOISE
+    color: #ffd700;     GOLD
+    color: #ff6f61;     CORAL
+    color: #90ee90;     LIGHT GREEN
+    
+    */color: #90ee90; 
+    color: #ffffcc;}
+
+
+    
+
+ul {
+    z-index:2;
+    position:absolute;
+    list-style: disc;
+    padding: 0;
+  }
+
+  /* Style the list items */
+  li {
+
+    margin-bottom: 20px;
+    line-height: 1rem;
+    font-family:"ubuntu" ;
+    text-align: justify;
+    font-size: 0.8rem;
+color: #ffffcc;
+margin-top: -0.8rem;
+margin-left: 0rem;
+    padding-right:0rem;
+  }
+}
+
+
