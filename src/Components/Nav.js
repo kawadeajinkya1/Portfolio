@@ -1,91 +1,73 @@
-import React from 'react';
-import {  useEffect,useRef, useState } from "react";
-import { Link } from "react-router-dom";
-import './Nav.css';
+import React, { useState, useEffect } from 'react';
+import { a } from 'react-router-dom';
 
 
-const Nav = () => {
+import classes from './Nav.module.css'; // Importing CSS module
 
-  const [burger,setBurger]=useState(false);
+const NavBar = () => {
+    const [active, setActive] = useState(classes.nav__menu);
+    const [icon, setIcon] = useState(classes.nav__toggler);
+    const [scrolled, setScrolled] = useState(false);
 
-   
-  function show(){
-      setBurger(!burger);
-  }
-
-
-  const [display,setDisplay]=useState();
-  function dis(){
-      setDisplay(!display)
-  }
-
-
-
-  
-  const menuRef = useRef(null);
-  const imgRef = useRef(null);
-
-  useEffect(() => {
-      const handleOutsideClick = (event) => {
-        // Check if the click is outside the menuRef
-        if ((menuRef.current && !menuRef.current.contains(event.target)) && (imgRef.current && !imgRef.current.contains(event.target))) {
-          setDisplay(false);
+    const navToggle = () => {
+        if (active === classes.nav__menu) {
+            setActive(`${classes.nav__menu} ${classes.nav__active}`);
+        } else {
+            setActive(classes.nav__menu);
         }
-      };
-  
-      // Attach the event listener to the document
-      document.addEventListener('mousedown', handleOutsideClick);
-  
-      // Clean up the event listener on component unmount
-      return () => {
-        document.removeEventListener('mousedown', handleOutsideClick);
-      };
+
+        if (icon === classes.nav__toggler) {
+            setIcon(`${classes.nav__toggler} ${classes.toggle}`);
+        } else {
+            setIcon(classes.nav__toggler);
+        }
+    };
+
+    const resetNavbar = () => {
+        setActive(classes.nav__menu);
+        setIcon(classes.nav__toggler);
+    };
+
+    const handleScroll = () => {
+        setScrolled(window.scrollY > 50);
+    };
+
+    useEffect(() => {
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
     }, []);
 
-   
-
-
-
-
-  return (
-    <div>
-
-<header>
-            <nav>
-
-
-            <div class="navbar">
-                <div class="left">
-                    <p>AJINKYA KAWADE</p>
+    return (
+        <div className={classes.nasv}>
+            <nav className={`${classes.nav} ${scrolled ? classes['nav--scrolled'] : ''}`}>
+                
+                <div className={classes.header2}>
+                    <div className={classes.logoR}>
+                       
+                         AJINKYA KAWADE
+                
+                    </div>
+                    <div className={classes.nd}>
+                        <div className={active}>
+                            <ul className={classes.ul}>
+                                <li ><a href='#home' className={classes.list} onClick={resetNavbar}>Home</a></li>
+                                <li ><a href='#about' className={classes.list} onClick={resetNavbar}>About</a></li>
+                                <li ><a href='#project' className={classes.list} onClick={resetNavbar}>Project</a></li>
+                                <li ><a href='#contact' className={classes.list} onClick={resetNavbar}>Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div onClick={navToggle} className={icon}>
+                        <div className={classes.line1}></div>
+                        <div className={classes.line2}></div>
+                        <div className={classes.line3}></div>
+                    </div>
                 </div>
-
-           <div className='right'>
-            
-           <div className="btn">
-              
-              <button className ="hammer" onClick={dis}><i className={burger ? "fas fa-bars icon_bar " : "fas fa-bars icon_bar" } ref={imgRef}  onClick={show}></i></button>
-          </div>
-          <div className={display? "burgerdata" : "burgerdata2"} ref={menuRef}>
-              <div className="dkd">
-              <li className="burgerItem"><button id="closeButton" class="xbtn" onClick={() => setDisplay(false)}>X</button></li>
-              <Link to="/" smooth={true} duration={500} className="burgerItem"> <li className="burgerItem">INTRO</li></Link> 
-              <Link to="/about" smooth={true} duration={500} className="burgerItem"> <li className="burgerItem">ABOUT</li></Link> 
-              <Link to="/skills" smooth={true} duration={500} className="burgerItem"><li className="burgerItem">SKILLS</li></Link> 
-              <Link to="/projects" smooth={true} duration={500} className="burgerItem"><li className="burgerItem">PROJECTS</li></Link> 
-              <Link to="/contact" smooth={true} duration={500} className="burgerItem"><li className="burgerItem">CONTACT</li></Link> 
-
-              </div>
-          </div>
-           </div>
-
-              </div>
-              
             </nav>
-        </header>
+        </div>
+    );
+};
 
-
-    </div>
-  )
-}
-
-export default Nav
+export default NavBar;

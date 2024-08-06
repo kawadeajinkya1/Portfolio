@@ -37,12 +37,12 @@ justify-content: center;
     text-align: justify;
     font-size: 1rem;
 
-color: #ffffcc; 
+color: rgb(9, 9, 68); 
 }
 
 .head{
     font-size: 1.2rem;
-    color: #ffffcc;
+    color: rgb(216, 0, 0);
 }
 
 .img:hover {
